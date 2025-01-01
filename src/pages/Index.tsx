@@ -5,13 +5,11 @@ import { Certifications } from "@/components/Certifications";
 import { Training } from "@/components/Training";
 import { FAQ } from "@/components/FAQ";
 import { CTA } from "@/components/CTA";
-import { OneDate } from "@/components/OneDate";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sage-50 via-white to-cream-50">
+    <div className="min-h-screen bg-white">
       <Hero />
-      <OneDate />
       <Features />
       <Courses />
       <Certifications />
