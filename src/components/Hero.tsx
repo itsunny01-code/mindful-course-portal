@@ -58,10 +58,10 @@ export const Hero = () => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 animate-fade-up [--animation-delay:800ms] opacity-0">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up [--animation-delay:800ms] opacity-0 w-full sm:w-auto">
           <Button
             size="lg"
-            className="bg-sage-600 hover:bg-sage-700 group relative overflow-hidden"
+            className="bg-sage-600 hover:bg-sage-700 group relative overflow-hidden w-full sm:w-auto"
           >
             <span className="relative z-10 flex items-center">
               Explore Courses
@@ -72,7 +72,7 @@ export const Hero = () => {
           <Button
             size="lg"
             variant="outline"
-            className="border-2 border-sage-600 text-sage-600 hover:bg-sage-50 backdrop-blur-sm"
+            className="border-2 border-sage-600 text-sage-600 hover:bg-sage-50 backdrop-blur-sm w-full sm:w-auto"
           >
             Learn More
           </Button>

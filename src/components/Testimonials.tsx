@@ -36,11 +36,11 @@ export const Testimonials = () => {
         <h2 className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-sage-800 to-cream-800">
           What Our Students Say
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="flex md:grid md:grid-cols-3 gap-8 overflow-x-auto pb-4 snap-x snap-mandatory -mx-4 px-4">
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index} 
-              className="backdrop-blur-sm bg-white/30 border-none shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-up" 
+              className="backdrop-blur-sm bg-white/30 border-none shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-up min-w-[300px] snap-center" 
               style={{ "--animation-delay": `${index * 200}ms` } as React.CSSProperties}
             >
               <CardContent className="p-6">

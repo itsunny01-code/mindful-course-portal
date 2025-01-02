@@ -21,14 +21,14 @@ export const CTA = () => {
             Join thousands of others who have already started their journey to
             emotional wellness and personal growth.
           </p>
-          <div className="flex justify-center gap-4">
-            <Button size="lg" className="bg-white text-sage-600 hover:bg-sage-50">
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button size="lg" className="bg-white text-sage-600 hover:bg-sage-50 w-full sm:w-auto">
               Get Started Now
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-sage-600"
+              className="border-white text-white hover:bg-white hover:text-sage-600 w-full sm:w-auto"
             >
               Schedule a Consultation
             </Button>
