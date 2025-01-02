@@ -31,7 +31,11 @@ export const UpcomingWebinars = () => {
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {upcomingEvents.map((event, index) => (
-            <Card key={index} className="backdrop-blur-sm bg-white/30 border-none shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-up" style={{ "--animation-delay": `${index * 200}ms` } as React.CSSProperties}>
+            <Card 
+              key={index} 
+              className="backdrop-blur-sm bg-white/30 border-none shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-up" 
+              style={{ "--animation-delay": `${index * 200}ms` } as React.CSSProperties}
+            >
               <CardContent className="p-6">
                 <h3 className="font-semibold text-xl text-sage-900 mb-4">{event.title}</h3>
                 <div className="flex items-center mb-2 text-sage-700">

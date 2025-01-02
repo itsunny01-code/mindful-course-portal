@@ -24,14 +24,18 @@ const testimonials = [
 
 export const Testimonials = () => {
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-sage-50 to-cream-50">
+    <section className="py-24 px-4 bg-gradient-to-b from-sage-50 via-cream-50 to-sage-50">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-sage-800 to-cream-800">
           What Our Students Say
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="backdrop-blur-sm bg-white/30 border-none shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-up" style={{ "--animation-delay": `${index * 200}ms` } as React.CSSProperties}>
+            <Card 
+              key={index} 
+              className="backdrop-blur-sm bg-white/30 border-none shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-up" 
+              style={{ "--animation-delay": `${index * 200}ms` } as React.CSSProperties}
+            >
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <User className="w-10 h-10 text-sage-600 bg-sage-100 rounded-full p-2" />
