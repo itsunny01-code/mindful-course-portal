@@ -4,7 +4,14 @@ import { Button } from "./ui/button";
 
 export const CounselingSection = () => {
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-sage-50 to-cream-50">
+    <section className="py-16 px-4 bg-gradient-to-b from-sage-50 to-cream-50 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-96 h-96 bg-sage-100 rounded-full filter blur-3xl opacity-20 -translate-y-1/2 -translate-x-1/2" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-cream-100 rounded-full filter blur-3xl opacity-20 translate-y-1/2 translate-x-1/2" />
+      <img
+        src="https://images.unsplash.com/photo-1497604401993-f2e922e5cb0a"
+        alt="Modern architecture"
+        className="absolute inset-0 w-full h-full object-cover opacity-5"
+      />
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-sage-800 to-cream-800">
           Professional Counseling Services

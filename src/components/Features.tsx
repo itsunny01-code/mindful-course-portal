@@ -27,6 +27,8 @@ export const Features = () => {
   return (
     <section className="py-24 bg-white">
       <div className="container px-4 mx-auto">
+        <div className="absolute right-0 w-64 h-64 bg-sage-50 rounded-full filter blur-2xl opacity-30 -translate-y-1/2" />
+        <div className="absolute left-0 w-64 h-64 bg-cream-50 rounded-full filter blur-2xl opacity-30 translate-y-1/2" />
         <div className="max-w-2xl mx-auto mb-16 text-center">
           <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-sage-700 uppercase bg-sage-100 rounded-full">
             Why Choose Us

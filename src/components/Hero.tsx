@@ -6,12 +6,14 @@ export const Hero = () => {
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-sage-50 to-white">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+          src="https://images.unsplash.com/photo-1483058712412-4245e9b90334"
           alt="Peaceful counseling environment"
           className="w-full h-full object-cover opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-sage-50/80 to-transparent" />
       </div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-cream-100 rounded-full filter blur-3xl opacity-20 -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-sage-100 rounded-full filter blur-3xl opacity-20 translate-y-1/2 -translate-x-1/2" />
       <div className="container relative z-10 px-4 py-32 mx-auto text-center">
         <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-sage-700 uppercase bg-sage-100 rounded-full animate-fade-up [--animation-delay:200ms] opacity-0">
           Transform Your Life
