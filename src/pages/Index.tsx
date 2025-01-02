@@ -5,6 +5,9 @@ import { Certifications } from "@/components/Certifications";
 import { Training } from "@/components/Training";
 import { FAQ } from "@/components/FAQ";
 import { CTA } from "@/components/CTA";
+import { Testimonials } from "@/components/Testimonials";
+import { UpcomingWebinars } from "@/components/UpcomingWebinars";
+import { CounselingSection } from "@/components/CounselingSection";
 
 const Index = () => {
   return (
@@ -12,6 +15,9 @@ const Index = () => {
       <Hero />
       <Features />
       <Courses />
+      <Testimonials />
+      <UpcomingWebinars />
+      <CounselingSection />
       <Certifications />
       <Training />
       <FAQ />
