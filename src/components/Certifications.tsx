@@ -1,4 +1,4 @@
-import { Award, BadgeCheck, Trophy } from "lucide-react";
+import { Award, BadgeCheck, Trophy, ChevronRight } from "lucide-react";
 
 const certifications = [
   {
@@ -20,32 +20,37 @@ const certifications = [
 
 export const Certifications = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-sage-50">
+    <section className="py-12 md:py-24 bg-gradient-to-b from-white to-sage-50">
       <div className="container px-4 mx-auto">
-        <div className="max-w-2xl mx-auto mb-16 text-center">
+        <div className="max-w-2xl mx-auto mb-12 text-center">
           <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-sage-700 uppercase bg-sage-100 rounded-full">
             Our Certifications
           </span>
-          <h2 className="mb-4 text-4xl font-bold tracking-tight text-gray-900">
+          <h2 className="mb-4 text-3xl md:text-4xl font-bold tracking-tight text-gray-900">
             Backed by Excellence
           </h2>
           <p className="text-lg text-gray-600">
             Our team holds prestigious certifications, ensuring you receive the highest quality guidance.
           </p>
         </div>
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="space-y-4 md:grid md:grid-cols-3 md:gap-8 md:space-y-0">
           {certifications.map((cert) => (
             <div
               key={cert.title}
-              className="p-8 transition-all duration-300 bg-white/50 backdrop-blur-sm rounded-2xl hover:shadow-lg hover:-translate-y-1 border border-sage-100"
+              className="flex items-center md:flex-col p-6 transition-all duration-300 bg-white/50 backdrop-blur-sm rounded-xl hover:shadow-lg hover:-translate-y-1 border border-sage-100"
             >
-              <div className="inline-block p-4 mb-6 bg-sage-100 rounded-lg">
-                <cert.icon className="w-6 h-6 text-sage-600" />
+              <div className="flex items-center flex-1 md:flex-col md:text-center">
+                <div className="p-3 md:p-4 mr-4 md:mr-0 md:mb-6 bg-sage-100 rounded-lg">
+                  <cert.icon className="w-6 h-6 text-sage-600" />
+                </div>
+                <div className="flex-1 md:text-center">
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-1 md:mb-3">
+                    {cert.title}
+                  </h3>
+                  <p className="hidden md:block text-gray-600">{cert.description}</p>
+                </div>
               </div>
-              <h3 className="mb-3 text-xl font-semibold text-gray-900">
-                {cert.title}
-              </h3>
-              <p className="text-gray-600">{cert.description}</p>
+              <ChevronRight className="w-5 h-5 text-sage-400 md:hidden" />
             </div>
           ))}
         </div>
