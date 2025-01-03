@@ -30,49 +30,49 @@ const trainings = [
 
 export const Training = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-sage-50 to-cream-50">
+    <section className="py-12 md:py-24 bg-cream-50">
       <div className="container px-4 mx-auto">
-        <div className="max-w-2xl mx-auto mb-16 text-center">
-          <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-cream-700 uppercase bg-cream-100 rounded-full">
-            Training Programs
-          </span>
-          <h2 className="mb-4 text-4xl font-bold tracking-tight text-gray-900">
-            Enhance Your Skills
+        <div className="max-w-2xl mx-auto mb-12 text-center">
+          <h2 className="text-[40px] font-medium text-gray-900 mb-4">
+            Mental Health Resources
           </h2>
-          <p className="text-lg text-gray-600">
-            Comprehensive training programs designed to elevate your counseling practice.
+          <p className="text-lg text-gray-600 mb-8">
+            Awareness is the first step to change. Check out our digital library to learn more about mental health.
           </p>
         </div>
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="space-y-4">
           {trainings.map((training) => (
             <div
               key={training.title}
-              className="p-8 transition-all duration-300 bg-white rounded-2xl hover:shadow-lg group"
+              className="bg-white rounded-2xl p-6 transition-all duration-300 hover:shadow-lg"
             >
-              <div className="flex items-start gap-6">
-                <div className="p-4 transition-colors bg-cream-100 rounded-lg group-hover:bg-cream-200">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-cream-50 rounded-lg">
                   <training.icon className="w-6 h-6 text-cream-700" />
                 </div>
-                <div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-xl font-semibold text-gray-900">
+                <div className="flex-1">
+                  <div className="flex flex-col mb-3">
+                    <span className="text-sm uppercase tracking-wider text-gray-500 mb-1">
+                      ARTICLE | {training.duration}
+                    </span>
+                    <h3 className="text-xl font-medium text-gray-900">
                       {training.title}
                     </h3>
-                    <span className="px-2 py-1 text-xs font-medium text-cream-700 bg-cream-100 rounded-full">
-                      {training.duration}
-                    </span>
                   </div>
-                  <p className="mb-4 text-gray-600">{training.description}</p>
-                  <Button
-                    variant="outline"
-                    className="text-cream-700 border-cream-200 hover:bg-cream-50"
-                  >
-                    Learn More
-                  </Button>
+                  <p className="text-gray-600 mb-4">{training.description}</p>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-12 text-center">
+          <Button 
+            variant="ghost"
+            className="text-cream-700 hover:text-cream-800 hover:bg-cream-100 text-lg font-medium group"
+          >
+            VIEW ALL RESOURCES
+            <span className="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
+          </Button>
         </div>
       </div>
     </section>
