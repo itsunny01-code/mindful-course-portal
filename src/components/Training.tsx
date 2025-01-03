@@ -37,7 +37,7 @@ const trainings = [
 
 export const Training = () => {
   return (
-    <section className="py-12 md:py-24 bg-[#FDE1D3]">
+    <section className="py-12 md:py-24 bg-cream-50">
       <div className="container px-4 mx-auto">
         <div className="max-w-2xl mx-auto mb-12 text-center">
           <h2 className="text-[40px] font-medium text-gray-900 mb-4">
