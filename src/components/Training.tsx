@@ -83,7 +83,7 @@ export const Training = () => {
             <CarouselNext className="hidden md:flex" />
           </Carousel>
         </div>
-        <div className="hidden md:space-y-4 md:block">
+        <div className="hidden md:grid md:grid-cols-2 gap-4">
           {trainings.map((training) => (
             <div
               key={training.title}
