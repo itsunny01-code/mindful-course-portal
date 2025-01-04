@@ -17,13 +17,16 @@ export const CourseCard = ({
   image,
 }: CourseCardProps) => {
   return (
-    <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+    <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group bg-white/80 backdrop-blur-sm border-sage-100">
       <CardHeader className="p-0">
-        <img
-          src={image}
-          alt={title}
-          className="object-cover w-full h-48"
-        />
+        <div className="relative overflow-hidden">
+          <img
+            src={image}
+            alt={title}
+            className="object-cover w-full h-48 transition-transform duration-300 group-hover:scale-110"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+        </div>
       </CardHeader>
       <CardContent className="p-6">
         <div className="flex gap-2 mb-4">
@@ -38,7 +41,7 @@ export const CourseCard = ({
         <p className="text-gray-600">{description}</p>
       </CardContent>
       <CardFooter className="p-6 pt-0">
-        <Button className="w-full bg-sage-600 hover:bg-sage-700">
+        <Button className="w-full bg-sage-600 hover:bg-sage-700 transition-colors">
           Learn More
         </Button>
       </CardFooter>

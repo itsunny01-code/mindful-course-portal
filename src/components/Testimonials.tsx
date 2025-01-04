@@ -40,12 +40,14 @@ export const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index} 
-              className="backdrop-blur-sm bg-white/30 border-none shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-up min-w-[300px] snap-center" 
+              className="backdrop-blur-sm bg-white/30 border-none shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-up min-w-[300px] snap-center group" 
               style={{ "--animation-delay": `${index * 200}ms` } as React.CSSProperties}
             >
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <User className="w-10 h-10 text-sage-600 bg-sage-100 rounded-full p-2" />
+                  <div className="p-2 bg-sage-100 rounded-full group-hover:bg-sage-200 transition-colors">
+                    <User className="w-8 h-8 text-sage-600" />
+                  </div>
                   <div className="ml-3">
                     <h3 className="font-semibold text-sage-900">{testimonial.name}</h3>
                     <p className="text-sm text-sage-600">{testimonial.role}</p>

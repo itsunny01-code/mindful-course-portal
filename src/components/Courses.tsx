@@ -26,13 +26,13 @@ const courses = [
 
 export const Courses = () => {
   return (
-    <section className="py-24 bg-sage-50">
+    <section className="py-24 bg-gradient-to-b from-sage-50 to-cream-50">
       <div className="container px-4 mx-auto">
         <div className="max-w-2xl mx-auto mb-16 text-center">
-          <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-sage-700 uppercase bg-sage-100 rounded-full">
+          <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-sage-700 uppercase bg-sage-100/80 backdrop-blur-sm rounded-full">
             Our Courses
           </span>
-          <h2 className="mb-4 text-4xl font-bold tracking-tight text-gray-900">
+          <h2 className="mb-4 text-4xl font-bold tracking-tight bg-gradient-to-r from-sage-800 to-cream-800 bg-clip-text text-transparent">
             Start Your Growth Journey Today
           </h2>
           <p className="text-lg text-gray-600">
