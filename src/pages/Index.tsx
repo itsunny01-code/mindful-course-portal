@@ -8,13 +8,10 @@ import { UpcomingWebinars } from "@/components/UpcomingWebinars";
 import { CounselingSection } from "@/components/CounselingSection";
 import { FAQ } from "@/components/FAQ";
 import { CTA } from "@/components/CTA";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
       <Hero />
       <Features />
       <Courses />
@@ -25,7 +22,6 @@ const Index = () => {
       <Testimonials />
       <FAQ />
       <CTA />
-      <Footer />
     </div>
   );
 };
