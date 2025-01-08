@@ -8,6 +8,7 @@ import { UpcomingWebinars } from "@/components/UpcomingWebinars";
 import { CounselingSection } from "@/components/CounselingSection";
 import { FAQ } from "@/components/FAQ";
 import { CTA } from "@/components/CTA";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       <Testimonials />
       <FAQ />
       <CTA />
+      <Footer />
     </div>
   );
 };
