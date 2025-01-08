@@ -24,16 +24,16 @@ const testimonials = [
 
 export const Testimonials = () => {
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-primary-light/10 via-cream-50 to-primary-light/10 relative overflow-hidden">
+    <section className="py-24 px-4 bg-gradient-to-b from-white via-cream-50/30 to-white relative overflow-hidden">
       <div className="absolute top-0 right-0 w-72 h-72 bg-cream-100 rounded-full filter blur-3xl opacity-30 -translate-y-1/2 translate-x-1/2" />
-      <div className="absolute bottom-0 left-0 w-72 h-72 bg-primary-light rounded-full filter blur-3xl opacity-30 translate-y-1/2 -translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-72 h-72 bg-cream-200 rounded-full filter blur-3xl opacity-30 translate-y-1/2 -translate-x-1/2" />
       <img
         src="https://images.unsplash.com/photo-1473177104440-ffee2f376098"
         alt="Elegant interior"
         className="absolute inset-0 w-full h-full object-cover opacity-5"
       />
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-primary-dark to-cream-800">
+        <h2 className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-cream-900 to-cream-700">
           What Our Students Say
         </h2>
         <div className="flex md:grid md:grid-cols-3 gap-8 overflow-x-auto pb-4 snap-x snap-mandatory -mx-4 px-4">
