@@ -25,7 +25,9 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#273c67",
+          light: "#3a5590",
+          dark: "#1b2a4a",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -82,7 +84,6 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
