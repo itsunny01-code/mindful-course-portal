@@ -60,8 +60,8 @@ export const Training = () => {
                 <CarouselItem key={training.title} className="pl-2 md:pl-4 basis-[85%] md:basis-1/2">
                   <div className="bg-white rounded-2xl p-6 transition-all duration-300 hover:shadow-lg h-full">
                     <div className="flex items-start gap-4">
-                      <div className="p-3 bg-cream-50 rounded-lg">
-                        <training.icon className="w-6 h-6 text-cream-700" />
+                      <div className="p-3 bg-primary-light/10 rounded-lg">
+                        <training.icon className="w-6 h-6 text-primary" />
                       </div>
                       <div className="flex-1">
                         <div className="flex flex-col mb-3">
@@ -90,8 +90,8 @@ export const Training = () => {
               className="bg-white rounded-2xl p-6 transition-all duration-300 hover:shadow-lg"
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-cream-50 rounded-lg">
-                  <training.icon className="w-6 h-6 text-cream-700" />
+                <div className="p-3 bg-primary-light/10 rounded-lg">
+                  <training.icon className="w-6 h-6 text-primary" />
                 </div>
                 <div className="flex-1">
                   <div className="flex flex-col mb-3">
@@ -111,7 +111,7 @@ export const Training = () => {
         <div className="mt-12 text-center">
           <Button 
             variant="ghost"
-            className="text-cream-700 hover:text-cream-800 hover:bg-cream-100 text-lg font-medium group"
+            className="text-primary hover:text-primary-dark hover:bg-primary-light/10 text-lg font-medium group"
           >
             VIEW ALL RESOURCES
             <span className="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
