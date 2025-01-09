@@ -1,4 +1,4 @@
-import { BookOpen, Users, Trophy, Heart } from "lucide-react";
+import { BookOpen, Users } from "lucide-react";
 
 const features = [
   {
@@ -10,16 +10,6 @@ const features = [
     icon: Users,
     title: "Supportive Community",
     description: "Connect with others on similar journeys of growth",
-  },
-  {
-    icon: Trophy,
-    title: "Proven Methods",
-    description: "Evidence-based approaches for lasting positive change",
-  },
-  {
-    icon: Heart,
-    title: "Personal Growth",
-    description: "Develop self-awareness and emotional intelligence",
   },
 ];
 
