@@ -7,19 +7,19 @@ import {
 
 const faqs = [
   {
-    question: "What qualifications do your counselors have?",
+    question: "Do I need a specific qualification to join this program?",
     answer:
-      "Our counselors are licensed professionals with advanced degrees in counseling or related fields, backed by various certifications and years of practical experience.",
+      "No. No degree in psychology, neurology, or other subjects is needed. We teach you from scratch.!",
   },
   {
-    question: "How long are the counseling courses?",
+    question: "Can I pick some of these certifications? I am not able to / willing to complete all of them?",
     answer:
-      "Course durations vary from 6 to 12 weeks, depending on the program. Each is designed to provide comprehensive coverage while fitting into your schedule.",
+      "Yes. You may choose any certification pay for that program and complete work associated with that particular certification. Each independent certification has a Fee of Rs 12000 + Taxes. There could be time-bound discounts available. Please check the page of that specific certification to know the schedule and discounts.",
   },
   {
-    question: "Are the courses available online?",
+    question: "Do we get the study material?",
     answer:
-      "Yes, all our courses are available online with flexible scheduling options. You can access the content anytime, anywhere.",
+      "Absolutely! You not only get books but the learning happens through a workbook with meticulously planned activities and content. Ample web resources with websites, videos, and tests are also provided.",
   },
   {
     question: "What support is available during the course?",
@@ -27,9 +27,9 @@ const faqs = [
       "We provide dedicated mentor support, group discussions, and regular check-ins throughout your course journey.",
   },
   {
-    question: "Are there any prerequisites for the courses?",
+    question: "If I choose electives, will there be any change in the fees?",
     answer:
-      "Most of our courses are designed to be accessible to beginners, though some advanced courses may require prior experience or basic certifications.",
+      "It will depend on which electives are opted for. Some courses like EFT & NLP are longer courses delivered by international trainers. Such programs may cost little more.",
   },
 ];
 
@@ -42,10 +42,10 @@ export const FAQ = () => {
             FAQ
           </span>
           <h2 className="mb-4 text-4xl font-bold tracking-tight bg-gradient-to-r from-cream-900 to-cream-700 bg-clip-text text-transparent">
-            Common Questionss
+            Common Questions
           </h2>
           <p className="text-lg text-gray-600">
-            Find answers to frequently asked questions about our courses and programs.
+            You can find answers to frequently asked questions about our courses and programs.
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
