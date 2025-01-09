@@ -10,10 +10,10 @@ import {
 
 const trainings = [
   {
-    title: "Professional Development",
+    title: "Emotional Intelligence",
     description: "Continuous learning programs for counseling professionals",
     icon: GraduationCap,
-    duration: "6 months",
+    duration: "1782 Certified",
   },
   {
     title: "Specialized Workshops",
@@ -66,7 +66,7 @@ export const Training = () => {
                       <div className="flex-1">
                         <div className="flex flex-col mb-3">
                           <span className="text-sm uppercase tracking-wider text-primary-dark/70 mb-1">
-                            ARTICLE | {training.duration}
+                            (3866 Rating) | {training.duration}
                           </span>
                           <h3 className="text-xl font-medium text-primary">
                             {training.title}
