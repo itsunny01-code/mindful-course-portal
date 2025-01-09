@@ -42,7 +42,7 @@ export const FAQ = () => {
             FAQ
           </span>
           <h2 className="mb-4 text-4xl font-bold tracking-tight bg-gradient-to-r from-cream-900 to-cream-700 bg-clip-text text-transparent">
-            Common Questions
+            Common Questionss
           </h2>
           <p className="text-lg text-gray-600">
             Find answers to frequently asked questions about our courses and programs.
