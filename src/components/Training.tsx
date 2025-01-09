@@ -23,7 +23,7 @@ const trainings = [
   },
   {
     title: "Hypnotherapy Training",
-    description: "Endorphin Hypnotherapy training has a unique way of content delivery. It is divided in four phases of learning to make it more effective.",
+    description: "Endorphin Hypnotherapy training has a unique way of content delivery.",
     icon: Users,
     duration: "3 months",
   },
