@@ -37,13 +37,13 @@ const trainings = [
 
 export const Training = () => {
   return (
-    <section className="py-12 md:py-24 bg-cream-50">
+    <section className="py-12 md:py-24 bg-primary-light/5">
       <div className="container px-4 mx-auto">
         <div className="max-w-2xl mx-auto mb-12 text-center">
-          <h2 className="text-[40px] font-medium text-gray-900 mb-4">
+          <h2 className="text-[40px] font-medium text-primary mb-4">
             Mental Health Resources
           </h2>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-lg text-primary-dark/70 mb-8">
             Awareness is the first step to change. Check out our digital library to learn more about mental health.
           </p>
         </div>
@@ -58,21 +58,21 @@ export const Training = () => {
             <CarouselContent className="-ml-2 md:-ml-4">
               {trainings.map((training) => (
                 <CarouselItem key={training.title} className="pl-2 md:pl-4 basis-[85%] md:basis-1/2">
-                  <div className="bg-white rounded-2xl p-6 transition-all duration-300 hover:shadow-lg h-full">
+                  <div className="bg-secondary-light/10 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg h-full">
                     <div className="flex items-start gap-4">
-                      <div className="p-3 bg-primary-light/10 rounded-lg">
-                        <training.icon className="w-6 h-6 text-primary" />
+                      <div className="p-3 bg-secondary-light/20 rounded-lg">
+                        <training.icon className="w-6 h-6 text-secondary" />
                       </div>
                       <div className="flex-1">
                         <div className="flex flex-col mb-3">
-                          <span className="text-sm uppercase tracking-wider text-gray-500 mb-1">
+                          <span className="text-sm uppercase tracking-wider text-primary-dark/70 mb-1">
                             ARTICLE | {training.duration}
                           </span>
-                          <h3 className="text-xl font-medium text-gray-900">
+                          <h3 className="text-xl font-medium text-primary">
                             {training.title}
                           </h3>
                         </div>
-                        <p className="text-gray-600 mb-4">{training.description}</p>
+                        <p className="text-primary-dark/70 mb-4">{training.description}</p>
                       </div>
                     </div>
                   </div>
@@ -87,22 +87,22 @@ export const Training = () => {
           {trainings.map((training) => (
             <div
               key={training.title}
-              className="bg-white rounded-2xl p-6 transition-all duration-300 hover:shadow-lg"
+              className="bg-secondary-light/10 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg"
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-primary-light/10 rounded-lg">
-                  <training.icon className="w-6 h-6 text-primary" />
+                <div className="p-3 bg-secondary-light/20 rounded-lg">
+                  <training.icon className="w-6 h-6 text-secondary" />
                 </div>
                 <div className="flex-1">
                   <div className="flex flex-col mb-3">
-                    <span className="text-sm uppercase tracking-wider text-gray-500 mb-1">
+                    <span className="text-sm uppercase tracking-wider text-primary-dark/70 mb-1">
                       ARTICLE | {training.duration}
                     </span>
-                    <h3 className="text-xl font-medium text-gray-900">
+                    <h3 className="text-xl font-medium text-primary">
                       {training.title}
                     </h3>
                   </div>
-                  <p className="text-gray-600 mb-4">{training.description}</p>
+                  <p className="text-primary-dark/70 mb-4">{training.description}</p>
                 </div>
               </div>
             </div>

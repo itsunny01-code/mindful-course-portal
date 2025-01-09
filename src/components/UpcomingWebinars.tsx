@@ -24,9 +24,9 @@ const upcomingEvents = [
 
 export const UpcomingWebinars = () => {
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-cream-50 to-sage-50">
+    <section className="py-16 px-4 bg-primary-light/5">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-cream-800 to-sage-800">
+        <h2 className="text-4xl font-bold text-center mb-12 text-primary">
           Upcoming Webinars & Training
         </h2>
         <div className="flex md:grid md:grid-cols-3 gap-8 overflow-x-auto pb-4 snap-x snap-mandatory -mx-4 px-4">
@@ -37,16 +37,16 @@ export const UpcomingWebinars = () => {
               style={{ "--animation-delay": `${index * 200}ms` } as React.CSSProperties}
             >
               <CardContent className="p-6">
-                <h3 className="font-semibold text-xl text-sage-900 mb-4">{event.title}</h3>
-                <div className="flex items-center mb-2 text-sage-700">
+                <h3 className="font-semibold text-xl text-primary mb-4">{event.title}</h3>
+                <div className="flex items-center mb-2 text-primary-dark">
                   <Calendar className="w-5 h-5 mr-2" />
                   <span>{event.date}</span>
                 </div>
-                <div className="flex items-center mb-4 text-sage-700">
+                <div className="flex items-center mb-4 text-primary-dark">
                   <Clock className="w-5 h-5 mr-2" />
                   <span>{event.time}</span>
                 </div>
-                <p className="text-sage-600">Instructor: {event.instructor}</p>
+                <p className="text-primary-dark/70">Instructor: {event.instructor}</p>
               </CardContent>
             </Card>
           ))}

@@ -20,7 +20,7 @@ const features = [
 
 export const Features = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-accent-light/10">
+    <section className="py-24">
       <div className="container px-4 mx-auto relative">
         <div className="absolute right-0 w-64 h-64 bg-secondary-light/20 rounded-full filter blur-2xl opacity-30 -translate-y-1/2" />
         <div className="absolute left-0 w-64 h-64 bg-accent-light/20 rounded-full filter blur-2xl opacity-30 translate-y-1/2" />

@@ -3,20 +3,20 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-accent-light/20 via-white to-white">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-accent/10 via-white to-white">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1483058712412-4245e9b90334"
           alt="Peaceful counseling environment"
-          className="w-full h-full object-cover opacity-5"
+          className="w-full h-full object-cover opacity-10"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-light/10 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent" />
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-20 right-20 w-64 h-64 bg-secondary-light/20 rounded-full filter blur-3xl opacity-20 animate-pulse" />
-      <div className="absolute bottom-20 left-20 w-64 h-64 bg-accent-light/20 rounded-full filter blur-3xl opacity-20 animate-pulse" />
+      <div className="absolute top-20 right-20 w-64 h-64 bg-secondary/20 rounded-full filter blur-3xl opacity-20 animate-pulse" />
+      <div className="absolute bottom-20 left-20 w-64 h-64 bg-accent/20 rounded-full filter blur-3xl opacity-20 animate-pulse" />
 
       <div className="container relative z-10 px-4 py-32 mx-auto text-center">
         {/* Badge */}
@@ -45,7 +45,7 @@ export const Hero = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up [--animation-delay:800ms] opacity-0">
           <Button
             size="lg"
-            className="bg-secondary hover:bg-secondary-dark group relative overflow-hidden text-white"
+            className="bg-secondary hover:bg-secondary-dark text-white group relative overflow-hidden"
           >
             <span className="relative z-10 flex items-center">
               Explore Courses
