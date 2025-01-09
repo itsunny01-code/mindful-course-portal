@@ -4,16 +4,16 @@ import { Button } from "./ui/button";
 const features = [
   {
     icon: BookOpen,
-    title: "Expert-Led Courses",
+    title: "Individual Certification",
     description: "Learn from certified counselors with years of experience",
-    buttonText: "View Courses",
+    buttonText: "Learn More",
     buttonLink: "#courses"
   },
   {
     icon: Users,
-    title: "Supportive Community",
+    title: "Group Training",
     description: "Connect with others on similar journeys of growth",
-    buttonText: "Join Community",
+    buttonText: "Learn More",
     buttonLink: "#community"
   },
 ];
