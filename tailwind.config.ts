@@ -31,20 +31,24 @@ export default {
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
+          DEFAULT: "#ff7a57",
+          light: "#ff9980",
+          dark: "#ff5c33",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        accent: {
+          DEFAULT: "#f3d046",
+          light: "#f5da71",
+          dark: "#f1c71f",
+          foreground: "hsl(var(--accent-foreground))",
+        },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
+          DEFAULT: "#ff7a57",
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
+          DEFAULT: "#273c67",
           foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -53,30 +57,6 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
-        },
-        sage: {
-          50: "#f4f7f4",
-          100: "#e1eae3",
-          200: "#c4d6c8",
-          300: "#a3bfa9",
-          400: "#85a78c",
-          500: "#658b6d",
-          600: "#537358",
-          700: "#435c47",
-          800: "#364839",
-          900: "#2c3a2e",
-        },
-        cream: {
-          50: "#faf6f0",
-          100: "#f5ede1",
-          200: "#ead6c3",
-          300: "#dfc0a4",
-          400: "#d4aa86",
-          500: "#c99468",
-          600: "#a17754",
-          700: "#7a5a40",
-          800: "#52392b",
-          900: "#291d15",
         },
       },
       borderRadius: {
