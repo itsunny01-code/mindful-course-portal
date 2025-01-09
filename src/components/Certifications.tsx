@@ -2,8 +2,8 @@ import { Award, BadgeCheck, Trophy, ChevronRight } from "lucide-react";
 
 const certifications = [
   {
-    title: "Licensed Professional Counselor",
-    description: "Nationally recognized certification for mental health counseling",
+    title: "Neuro-Linguistic Programming",
+    description: "Learn neuroscience-based behavior technology to stimulate motivational points in the brain",
     icon: Award,
   },
   {
@@ -12,8 +12,8 @@ const certifications = [
     icon: BadgeCheck,
   },
   {
-    title: "Trauma-Informed Care",
-    description: "Advanced certification in trauma counseling",
+    title: "Sleep Consultant",
+    description: "Learn Sleep Science & Circadian Rhythm to manage sleep!",
     icon: Trophy,
   },
 ];
