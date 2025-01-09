@@ -1,15 +1,20 @@
 import { BookOpen, Users } from "lucide-react";
+import { Button } from "./ui/button";
 
 const features = [
   {
     icon: BookOpen,
     title: "Expert-Led Courses",
     description: "Learn from certified counselors with years of experience",
+    buttonText: "View Courses",
+    buttonLink: "#courses"
   },
   {
     icon: Users,
     title: "Supportive Community",
     description: "Connect with others on similar journeys of growth",
+    buttonText: "Join Community",
+    buttonLink: "#community"
   },
 ];
 
@@ -45,7 +50,14 @@ export const Features = () => {
               <h3 className="mb-3 text-xl font-semibold text-gray-900">
                 {feature.title}
               </h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <p className="text-gray-600 mb-6">{feature.description}</p>
+              <Button 
+                variant="outline" 
+                className="bg-cream-50 hover:bg-cream-100 text-cream-800 border-cream-200"
+                onClick={() => window.location.href = feature.buttonLink}
+              >
+                {feature.buttonText}
+              </Button>
             </div>
           ))}
         </div>
