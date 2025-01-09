@@ -41,7 +41,7 @@ export const Training = () => {
       <div className="container px-4 mx-auto">
         <div className="max-w-2xl mx-auto mb-12 text-center">
           <h2 className="text-[40px] font-medium text-primary mb-4">
-            PSYCHOLOGY TRAINING
+            Psychology Training
           </h2>
           <p className="text-lg text-primary-dark/70 mb-8">
             Psychology training improves understanding of behavior, emotions, mental processes, and problem-solving skills.
