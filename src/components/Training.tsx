@@ -41,10 +41,10 @@ export const Training = () => {
       <div className="container px-4 mx-auto">
         <div className="max-w-2xl mx-auto mb-12 text-center">
           <h2 className="text-[40px] font-medium text-primary mb-4">
-            Mental Health Resources
+            PSYCHOLOGY TRAINING
           </h2>
           <p className="text-lg text-primary-dark/70 mb-8">
-            Awareness is the first step to change. Check out our digital library to learn more about mental health.
+            Psychology training improves understanding of behavior, emotions, mental processes, and problem-solving skills.
           </p>
         </div>
         <div className="block md:hidden">
@@ -113,7 +113,7 @@ export const Training = () => {
             variant="ghost"
             className="text-primary hover:text-primary-dark hover:bg-primary-light/10 text-lg font-medium group"
           >
-            VIEW ALL RESOURCES
+            VIEW ALL TRAININGS
             <span className="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
           </Button>
         </div>
