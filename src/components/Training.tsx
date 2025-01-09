@@ -11,25 +11,25 @@ import {
 const trainings = [
   {
     title: "Emotional Intelligence",
-    description: "Continuous learning programs for counseling professionals",
+    description: "Learn more about the importance of emotional intelligence and how it can benefit you in all areas of your life.",
     icon: GraduationCap,
     duration: "1782 Certified",
   },
   {
-    title: "Specialized Workshops",
-    description: "Intensive training sessions on specific counseling techniques",
+    title: "Rational Emotive Behavior Therapy",
+    description: "REBT is an action-oriented approach to managing cognitive, emotional, and behavioral disturbances.",
     icon: BookOpen,
     duration: "2 weeks",
   },
   {
-    title: "Mentorship Program",
-    description: "One-on-one guidance from experienced counselors",
+    title: "Hypnotherapy Training",
+    description: "Endorphin Hypnotherapy training has a unique way of content delivery. It is divided in four phases of learning to make it more effective.",
     icon: Users,
     duration: "3 months",
   },
   {
-    title: "Certification Preparation",
-    description: "Comprehensive preparation for counseling certifications",
+    title: "Neurobiology of Stress",
+    description: "This is a professional certification for Healthcare professionals and therapists. ",
     icon: School,
     duration: "4 months",
   },
