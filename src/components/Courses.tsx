@@ -2,20 +2,20 @@ import { CourseCard } from "./CourseCard";
 
 const courses = [
   {
-    title: "Emotional Intelligence Mastery",
-    description: "Develop deeper self-awareness and better relationship skills",
+    title: "Counselling Psychology",
+    description: "Counselling Psychology is a broad specialization within professional psychology that helps people with emotional and mental health issues.",
     duration: "8 weeks",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
   },
   {
-    title: "Stress Management & Resilience",
-    description: "Learn practical techniques to handle stress effectively",
+    title: "Learning Disability",
+    description: "Learning difficulties is an umbrella term for academic problems of different origins. It comprises general learning difficulties and low academic performance.",
     duration: "6 weeks",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
   },
   {
-    title: "Mindful Living",
-    description: "Incorporate mindfulness practices into your daily life",
+    title: "Marriage Counselling",
+    description: "This course is designed for those who want to understand relationships in marriage and enhance the key points to improve the quality of the relationship between two married individuals.",
     duration: "7 weeks",
     image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
   },
