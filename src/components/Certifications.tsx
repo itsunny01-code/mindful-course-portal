@@ -17,8 +17,8 @@ const certifications = [
     icon: Trophy,
   },
   {
-    title: "Mindfulness Practitioner",
-    description: "Master mindfulness techniques and meditation practices",
+    title: "Rational Emotive Behavior Therapy",
+    description: "REBT is an action-oriented approach to managing cognitive, emotional, and behavioral disturbances.",
     icon: Brain,
   },
   {
@@ -27,8 +27,8 @@ const certifications = [
     icon: Heart,
   },
   {
-    title: "Positive Psychology",
-    description: "Learn to foster well-being and personal growth",
+    title: "Transactional Analysis",
+    description: "Endorphin conducts various certifications in Psychology, Neuroscience, and transactional analysis.",
     icon: Book,
   },
 ];
