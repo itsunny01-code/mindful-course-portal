@@ -1,4 +1,4 @@
-import { BookOpen, Users } from "lucide-react";
+import { BookOpen, Users, Brain, Heart } from "lucide-react";
 import { Button } from "./ui/button";
 
 const features = [
@@ -16,15 +16,26 @@ const features = [
     buttonText: "Learn More",
     buttonLink: "#community"
   },
+  {
+    icon: Brain,
+    title: "Expert Guidance",
+    description: "Get personalized support from industry experts",
+    buttonText: "Learn More",
+    buttonLink: "#experts"
+  },
+  {
+    icon: Heart,
+    title: "Holistic Approach",
+    description: "Comprehensive programs for complete well-being",
+    buttonText: "Learn More",
+    buttonLink: "#programs"
+  },
 ];
 
 export const Features = () => {
   return (
     <section className="py-24">
       <div className="container px-4 mx-auto relative">
-        <div className="absolute right-0 w-64 h-64 bg-secondary-light/20 rounded-full filter blur-2xl opacity-30 -translate-y-1/2" />
-        <div className="absolute left-0 w-64 h-64 bg-accent-light/20 rounded-full filter blur-2xl opacity-30 translate-y-1/2" />
-        
         <div className="max-w-2xl mx-auto mb-16 text-center">
           <span className="inline-flex items-center px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-primary uppercase bg-primary-light/10 backdrop-blur-sm rounded-full">
             Why Choose Us
@@ -38,7 +49,7 @@ export const Features = () => {
           </p>
         </div>
         
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-4">
           {features.map((feature) => (
             <div
               key={feature.title}

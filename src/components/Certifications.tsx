@@ -1,4 +1,4 @@
-import { Award, BadgeCheck, Trophy, ChevronRight } from "lucide-react";
+import { Award, BadgeCheck, Trophy, Brain, Heart, Book } from "lucide-react";
 
 const certifications = [
   {
@@ -16,11 +16,26 @@ const certifications = [
     description: "Learn Sleep Science & Circadian Rhythm to manage sleep!",
     icon: Trophy,
   },
+  {
+    title: "Mindfulness Practitioner",
+    description: "Master mindfulness techniques and meditation practices",
+    icon: Brain,
+  },
+  {
+    title: "Emotional Intelligence Coach",
+    description: "Develop skills to understand and manage emotions effectively",
+    icon: Heart,
+  },
+  {
+    title: "Positive Psychology",
+    description: "Learn to foster well-being and personal growth",
+    icon: Book,
+  },
 ];
 
 export const Certifications = () => {
   return (
-    <section className="py-12 md:py-24 bg-gradient-to-b from-white to-primary-light/10">
+    <section className="py-12 md:py-24 bg-secondary-light/10">
       <div className="container px-4 mx-auto">
         <div className="max-w-2xl mx-auto mb-12 text-center">
           <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-primary uppercase bg-primary-light/10 rounded-full">
@@ -33,26 +48,31 @@ export const Certifications = () => {
             Our team holds prestigious certifications, ensuring you receive the highest quality guidance.
           </p>
         </div>
-        <div className="space-y-4 md:grid md:grid-cols-3 md:gap-8 md:space-y-0">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           {certifications.map((cert) => (
             <div
               key={cert.title}
-              className="flex items-center md:flex-col p-6 transition-all duration-300 bg-white/50 backdrop-blur-sm rounded-xl hover:shadow-lg hover:-translate-y-1 border border-primary-light/20"
+              className="flex flex-col p-6 transition-all duration-300 bg-white/50 backdrop-blur-sm rounded-xl hover:shadow-lg hover:-translate-y-1 border border-primary-light/20"
             >
-              <div className="flex items-center flex-1 md:flex-col md:text-center">
-                <div className="p-3 md:p-4 mr-4 md:mr-0 md:mb-6 bg-primary-light/10 rounded-lg">
+              <div className="flex items-center mb-4">
+                <div className="p-3 mr-4 bg-primary-light/10 rounded-lg">
                   <cert.icon className="w-6 h-6 text-primary" />
                 </div>
-                <div className="flex-1 md:text-center">
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-1 md:mb-3">
-                    {cert.title}
-                  </h3>
-                  <p className="hidden md:block text-gray-600">{cert.description}</p>
-                </div>
+                <h3 className="text-lg font-semibold text-gray-900">
+                  {cert.title}
+                </h3>
               </div>
-              <ChevronRight className="w-5 h-5 text-primary-light md:hidden" />
+              <p className="text-gray-600 mb-4 flex-grow">{cert.description}</p>
+              <button className="text-secondary hover:text-secondary-dark underline text-left transition-colors">
+                Learn More
+              </button>
             </div>
           ))}
+        </div>
+        <div className="text-center">
+          <button className="inline-block px-8 py-3 text-lg font-medium text-white bg-secondary hover:bg-secondary-dark transition-colors rounded-lg">
+            View All Certifications
+          </button>
         </div>
       </div>
     </section>

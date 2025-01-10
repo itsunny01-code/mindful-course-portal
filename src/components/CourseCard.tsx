@@ -4,7 +4,6 @@ import { Button } from "./ui/button";
 interface CourseCardProps {
   title: string;
   description: string;
-  price: string;
   duration: string;
   image: string;
 }
@@ -12,7 +11,6 @@ interface CourseCardProps {
 export const CourseCard = ({
   title,
   description,
-  price,
   duration,
   image,
 }: CourseCardProps) => {
@@ -32,9 +30,6 @@ export const CourseCard = ({
         <div className="flex gap-2 mb-4">
           <span className="px-3 py-1 text-xs font-medium text-primary bg-primary-light/10 rounded-full">
             {duration}
-          </span>
-          <span className="px-3 py-1 text-xs font-medium text-cream-700 bg-cream-100 rounded-full">
-            {price}
           </span>
         </div>
         <h3 className="mb-2 text-xl font-semibold text-gray-900">{title}</h3>
