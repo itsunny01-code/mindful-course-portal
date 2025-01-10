@@ -22,7 +22,7 @@ export const Hero = () => {
         {/* Badge */}
         <span className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-primary uppercase bg-primary-light/10 backdrop-blur-sm rounded-full animate-fade-up [--animation-delay:200ms] opacity-0">
           <Sparkles className="w-4 h-4" />
-          Transform Your Life
+          Master the art
         </span>
 
         {/* Heading */}
