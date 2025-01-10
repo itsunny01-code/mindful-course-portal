@@ -36,7 +36,7 @@ const certifications = [
 export const Certifications = () => {
   return (
     <section className="py-12 md:py-24 bg-secondary-light/10">
-      <div className="container px-4 mx-auto">
+      <div className="container px-4 mx-auto max-w-[1200px]">
         <div className="max-w-2xl mx-auto mb-12 text-center">
           <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-primary uppercase bg-primary-light/10 rounded-full">
             Our Certifications
