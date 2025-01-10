@@ -37,7 +37,7 @@ export const Hero = () => {
 
         {/* Description */}
         <p className="max-w-2xl mx-auto mb-10 text-lg text-primary-dark/80 animate-fade-up [--animation-delay:600ms] opacity-0">
-         Elevate your career and personal well-being with world-class counseling courses, comprehensive training, and recognized certifications. Master the art of emotional wellness and make a lasting impact in the lives of others.
+         To create a lasting impact, advance your career and well-being with professional counseling courses, training, and certification.
         </p>
 
         {/* CTA Buttons */}
