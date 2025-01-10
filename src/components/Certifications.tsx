@@ -39,7 +39,7 @@ export const Certifications = () => {
       <div className="container px-4 mx-auto max-w-[1200px]">
         <div className="max-w-2xl mx-auto mb-12 text-center">
           <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-primary uppercase bg-primary-light/10 rounded-full">
-            Our Certifications
+            Our Certifications & Training
           </span>
           <h2 className="mb-4 text-3xl md:text-4xl font-bold tracking-tight text-primary">
             Backed by Excellence
@@ -72,7 +72,7 @@ export const Certifications = () => {
         </div>
         <div className="text-center">
           <button className="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-secondary hover:bg-secondary-dark transition-colors rounded-lg group">
-            View All Certifications
+            View All Certifications & Training
             <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
           </button>
         </div>
