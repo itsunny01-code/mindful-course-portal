@@ -34,7 +34,7 @@ export const Testimonials = () => {
       <div className="container px-4 mx-auto max-w-[1200px]">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            We've helped <span className="text-secondary">Thousands</span> feel better.
+            We've helped <span className="text-secondary">Thousands</span> change their lives.
           </h2>
           <p className="text-white/70 text-lg">
             Now it's your turn to benefit from the 'Endorphin experience'...
