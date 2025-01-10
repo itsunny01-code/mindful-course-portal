@@ -1,67 +1,81 @@
-import { Star, MessageSquare, User } from "lucide-react";
-import { Card, CardContent } from "./ui/card";
+import { Star } from "lucide-react";
 
-const testimonials = [
+const stats = [
   {
-    name: "Sarah Johnson",
-    role: "Student",
-    text: "The counseling courses have transformed my approach to mental health. Highly recommended!",
-    rating: 5,
+    icon: "👥",
+    value: "150+",
+    label: "in-house therapists & psychiatrists"
   },
   {
-    name: "Michael Chen",
-    role: "Professional",
-    text: "Outstanding content and expert guidance. This program exceeded my expectations.",
-    rating: 5,
+    icon: "💫",
+    value: "6m+",
+    label: "lives impacted"
   },
   {
-    name: "Emily Davis",
-    role: "Healthcare Worker",
-    text: "The practical insights and supportive community made learning engaging and effective.",
-    rating: 5,
+    icon: "📅",
+    value: "140k+",
+    label: "sessions delivered in therapy & psychiatry"
   },
+  {
+    icon: "🏆",
+    value: "Best App",
+    label: "by Google Play India"
+  },
+  {
+    icon: "👥",
+    value: "50,000+",
+    label: "community members"
+  }
 ];
 
 export const Testimonials = () => {
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-white via-cream-50/30 to-white relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-72 h-72 bg-cream-100 rounded-full filter blur-3xl opacity-30 -translate-y-1/2 translate-x-1/2" />
-      <div className="absolute bottom-0 left-0 w-72 h-72 bg-cream-200 rounded-full filter blur-3xl opacity-30 translate-y-1/2 -translate-x-1/2" />
-      <img
-        src="https://images.unsplash.com/photo-1473177104440-ffee2f376098"
-        alt="Elegant interior"
-        className="absolute inset-0 w-full h-full object-cover opacity-5"
-      />
-      <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-cream-900 to-cream-700">
-          What Our Students Say
-        </h2>
-        <div className="flex md:grid md:grid-cols-3 gap-8 overflow-x-auto pb-4 snap-x snap-mandatory -mx-4 px-4">
-          {testimonials.map((testimonial, index) => (
-            <Card 
-              key={index} 
-              className="backdrop-blur-sm bg-white/30 border-none shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-up min-w-[300px] snap-center group" 
-              style={{ "--animation-delay": `${index * 200}ms` } as React.CSSProperties}
-            >
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="p-2 bg-primary-light/10 rounded-full group-hover:bg-primary-light/20 transition-colors">
-                    <User className="w-8 h-8 text-primary" />
-                  </div>
-                  <div className="ml-3">
-                    <h3 className="font-semibold text-primary-dark">{testimonial.name}</h3>
-                    <p className="text-sm text-primary-light">{testimonial.role}</p>
-                  </div>
-                </div>
-                <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-primary-dark/80">{testimonial.text}</p>
-                <MessageSquare className="w-8 h-8 text-primary-light mt-4 opacity-20" />
-              </CardContent>
-            </Card>
+    <section className="py-24 bg-primary text-white relative overflow-hidden">
+      <div className="container px-4 mx-auto">
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            We've helped <span className="text-secondary">millions</span> feel better.
+          </h2>
+          <p className="text-white/70 text-lg">
+            Now it's your turn to benefit from the 'Amaha experience'...
+          </p>
+        </div>
+
+        <div className="relative mb-20">
+          <button className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/10 p-3 rounded-full">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          
+          <div className="max-w-2xl mx-auto bg-primary-dark rounded-full p-16 relative">
+            <div className="absolute top-8 right-8">
+              <img
+                src="/lovable-uploads/433cc108-c2a7-4a3d-849d-e07178694824.png"
+                alt="Testimonial"
+                className="w-16 h-16 rounded-full border-4 border-white/10"
+              />
+            </div>
+            <p className="text-lg md:text-xl leading-relaxed mb-4">
+              "I was skeptical and afraid to be open to another person. I thought I could not do it, but my therapist has been very supportive in terms of my mental health journey and just allows me to feel my emotions and simplifies them for me. I trust her completely and know that she will be patient and understanding towards my problems."
+            </p>
+            <p className="text-white/70">- Anonymous, Cabin Crew, Delhi</p>
+          </div>
+
+          <button className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/10 p-3 rounded-full">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
+          {stats.map((stat, index) => (
+            <div key={index} className="text-center">
+              <span className="text-4xl mb-2 block">{stat.icon}</span>
+              <div className="text-2xl font-bold mb-2">{stat.value}</div>
+              <p className="text-white/70 text-sm">{stat.label}</p>
+            </div>
           ))}
         </div>
       </div>
