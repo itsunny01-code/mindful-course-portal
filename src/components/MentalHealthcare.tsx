@@ -7,13 +7,12 @@ export const MentalHealthcare = () => {
       <div className="container px-4 mx-auto max-w-[1200px]">
         <div className="max-w-2xl mx-auto mb-16 text-center">
           <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-primary uppercase bg-primary-light/10 rounded-full">
-            Our Mental Health Offering
-          </span>
+  Explore Your Path          </span>
           <h2 className="mb-4 text-3xl md:text-4xl font-bold tracking-tight text-primary">
-            Comprehensive Mental Healthcare Solutions
+           Choose Your Learning Style
           </h2>
           <p className="text-lg text-gray-600">
-            Discover our range of mental health services designed to support your well-being journey
+           Whether you thrive with personalized one-on-one certification or the collaborative energy of group training, we’ve got you covered. Select what suits your needs best.
           </p>
         </div>
 
@@ -28,11 +27,10 @@ export const MentalHealthcare = () => {
           </div>
           <div className="w-full md:w-1/2">
             <h3 className="text-3xl font-bold text-primary mb-6">
-              Therapy & Psychiatry
+              Individual Certification
             </h3>
             <p className="text-gray-600 mb-8">
-              Our in-house team of mental health therapists and psychiatrists is highly qualified 
-              and trained to deliver quality and compassionate clinical treatment.
+              Learn from certified counselors with years of experience, providing personalized guidance tailored to your needs. Whether you're seeking clarity, coping strategies, or support, our experts are here to help you every step of the way.
             </p>
             <Button className="bg-secondary hover:bg-secondary-dark group">
               Get Started
@@ -52,15 +50,13 @@ export const MentalHealthcare = () => {
           </div>
           <div className="w-full md:w-1/2">
             <h3 className="text-3xl font-bold text-primary mb-6">
-              Self-Care Resources
+             Group Trainings
             </h3>
             <p className="text-gray-600 mb-8">
-              Access a digital powerhouse of mental health resources. Get a personalized plan 
-              with tools, activities, articles & daily reminders to make mental healthcare 
-              a part of your routine.
+              Experience the power of community and collective learning with our group training sessions. Share insights, exchange ideas, and grow together in a supportive environment. 
             </p>
             <Button className="bg-secondary hover:bg-secondary-dark group">
-              Download App
+             Get Started
               <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
