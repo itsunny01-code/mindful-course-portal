@@ -3,12 +3,12 @@ import { BookOpen, Users, Brain, Heart } from "lucide-react";
 const features = [
   {
     icon: BookOpen,
-    title: "Individual Certification",
+    title: "Expert-Led Courses",
     description: "Learn from certified counselors with years of experience",
   },
   {
     icon: Users,
-    title: "Group Training",
+    title: "Supportive Community",
     description: "Connect with others on similar journeys of growth",
   },
   {
@@ -32,11 +32,10 @@ export const Features = () => {
             Why Choose Us
           </span>
           <h2 className="mb-4 text-4xl font-bold tracking-tight bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-            Transform Your Life with Expert Guidance
+            A Better You Starts with Expert Guidance
           </h2>
           <p className="text-lg text-primary-dark/70">
-            Our comprehensive approach combines professional expertise with practical tools
-            for real-world results.
+            Unlock your full potential with a customized approach that helps you grow mentally, emotionally, and physically.
           </p>
         </div>
         
