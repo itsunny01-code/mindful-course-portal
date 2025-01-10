@@ -13,8 +13,8 @@ const features = [
   },
   {
     icon: Brain,
-    title: "Expert Guidance",
-    description: "Get personalized support from industry experts",
+    title: "Proven Methods",
+    description: "Evidence-based approaches for lasting positive change",
   },
   {
     icon: Heart,
