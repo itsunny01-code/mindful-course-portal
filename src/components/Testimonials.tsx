@@ -17,11 +17,6 @@ const stats = [
     label: "sessions delivered in therapy & psychiatry"
   },
   {
-    icon: "🏆",
-    value: "Best App",
-    label: "by Google Play India"
-  },
-  {
     icon: "👥",
     value: "50,000+",
     label: "community members"
