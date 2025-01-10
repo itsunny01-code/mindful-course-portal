@@ -1,4 +1,4 @@
-import { Award, BadgeCheck, Trophy, Brain, Heart, Book } from "lucide-react";
+import { Award, BadgeCheck, Trophy, Brain, Heart, Book, ArrowRight } from "lucide-react";
 
 const certifications = [
   {
@@ -41,7 +41,7 @@ export const Certifications = () => {
           <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-primary uppercase bg-primary-light/10 rounded-full">
             Our Certifications
           </span>
-          <h2 className="mb-4 text-3xl md:text-4xl font-bold tracking-tight text-gray-900">
+          <h2 className="mb-4 text-3xl md:text-4xl font-bold tracking-tight text-primary">
             Backed by Excellence
           </h2>
           <p className="text-lg text-gray-600">
@@ -62,16 +62,18 @@ export const Certifications = () => {
                   {cert.title}
                 </h3>
               </div>
-              <p className="text-gray-600 mb-4 flex-grow">{cert.description}</p>
-              <button className="text-secondary hover:text-secondary-dark underline text-left transition-colors">
+              <p className="text-gray-600 mb-4 flex-grow hidden md:block">{cert.description}</p>
+              <button className="text-secondary hover:text-secondary-dark text-left transition-colors flex items-center group">
                 Learn More
+                <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
               </button>
             </div>
           ))}
         </div>
         <div className="text-center">
-          <button className="inline-block px-8 py-3 text-lg font-medium text-white bg-secondary hover:bg-secondary-dark transition-colors rounded-lg">
+          <button className="inline-flex items-center px-8 py-3 text-lg font-medium text-white bg-secondary hover:bg-secondary-dark transition-colors rounded-lg group">
             View All Certifications
+            <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
           </button>
         </div>
       </div>

@@ -1,67 +1,56 @@
 import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 
 export const MentalHealthcare = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24">
       <div className="container px-4 mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-primary mb-4">Our mental healthcare offerings</h2>
-          <p className="text-primary/70 max-w-3xl mx-auto">
-            We are a mental health ecosystem that brings together multiple treatment options to create an experience that makes getting help easy and seamless. From assessment to treatment, we're with you every step of the way.
-          </p>
+        {/* First Section */}
+        <div className="flex flex-col md:flex-row items-center gap-12 mb-24">
+          <div className="w-full md:w-1/2">
+            <img
+              src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+              alt="Mental Healthcare"
+              className="w-full h-[400px] object-cover rounded-2xl"
+            />
+          </div>
+          <div className="w-full md:w-1/2">
+            <h3 className="text-3xl font-bold text-primary mb-6">
+              Therapy & Psychiatry
+            </h3>
+            <p className="text-gray-600 mb-8">
+              Our in-house team of mental health therapists and psychiatrists is highly qualified 
+              and trained to deliver quality and compassionate clinical treatment.
+            </p>
+            <Button className="bg-secondary hover:bg-secondary-dark group">
+              Get Started
+              <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          {/* Therapy & Psychiatry Column */}
-          <div className="relative">
-            <div className="rounded-full bg-secondary/10 p-8">
-              <img
-                src="/lovable-uploads/b3421704-3601-4485-8df0-8fecfb33cbb8.png"
-                alt="Therapy Session"
-                className="w-full rounded-3xl shadow-lg"
-              />
-            </div>
-            <div className="mt-8">
-              <h3 className="text-3xl font-bold text-primary mb-4">Therapy & Psychiatry</h3>
-              <p className="text-primary/70 mb-4">
-                Our in-house team of mental health therapist and psychiatrist is highly qualified and trained to deliver quality and compassionate clinical treatment.
-              </p>
-              <p className="text-primary/70 mb-6">
-                Our team follows proprietary clinical protocols & undergoes peer supervision to ensure each individual gets exceptional care, either online or in person.
-              </p>
-              <Button 
-                variant="outline"
-                className="bg-white hover:bg-secondary-light/10 text-secondary border-secondary/20"
-              >
-                GET STARTED
-              </Button>
-            </div>
+        {/* Second Section */}
+        <div className="flex flex-col md:flex-row-reverse items-center gap-12">
+          <div className="w-full md:w-1/2">
+            <img
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+              alt="Self Care"
+              className="w-full h-[400px] object-cover rounded-2xl"
+            />
           </div>
-
-          {/* Self-Care Column */}
-          <div className="relative mt-8 md:mt-16">
-            <div className="rounded-full bg-accent/10 p-8">
-              <img
-                src="/placeholder.svg"
-                alt="Amaha App"
-                className="w-full rounded-3xl shadow-lg"
-              />
-            </div>
-            <div className="mt-8">
-              <h3 className="text-3xl font-bold text-primary mb-4">Self-Care</h3>
-              <p className="text-primary/70 mb-4">
-                The Amaha app is a digital powerhouse of mental health resources.
-              </p>
-              <p className="text-primary/70 mb-6">
-                Get access to a personalized plan with 600+ tools, activities, articles & daily reminders to make mental healthcare a part of your routine.
-              </p>
-              <Button 
-                variant="outline"
-                className="bg-white hover:bg-secondary-light/10 text-secondary border-secondary/20"
-              >
-                DOWNLOAD THE APP
-              </Button>
-            </div>
+          <div className="w-full md:w-1/2">
+            <h3 className="text-3xl font-bold text-primary mb-6">
+              Self-Care Resources
+            </h3>
+            <p className="text-gray-600 mb-8">
+              Access a digital powerhouse of mental health resources. Get a personalized plan 
+              with tools, activities, articles & daily reminders to make mental healthcare 
+              a part of your routine.
+            </p>
+            <Button className="bg-secondary hover:bg-secondary-dark group">
+              Download App
+              <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+            </Button>
           </div>
         </div>
       </div>

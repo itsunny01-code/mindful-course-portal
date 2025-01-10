@@ -35,13 +35,13 @@ const faqs = [
 
 export const FAQ = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-cream-50/30 to-white">
+    <section className="py-24 bg-gradient-to-b from-primary-light/5 to-white">
       <div className="container px-4 mx-auto">
         <div className="max-w-2xl mx-auto mb-16 text-center">
-          <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-cream-800 uppercase bg-cream-100/80 rounded-full">
+          <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-primary uppercase bg-primary-light/10 rounded-full">
             FAQ
           </span>
-          <h2 className="mb-4 text-4xl font-bold tracking-tight bg-gradient-to-r from-cream-900 to-cream-700 bg-clip-text text-transparent">
+          <h2 className="mb-4 text-4xl font-bold tracking-tight text-primary">
             Common Questions
           </h2>
           <p className="text-lg text-gray-600">
