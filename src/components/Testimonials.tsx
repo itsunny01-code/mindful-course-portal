@@ -1,5 +1,4 @@
 import { Star } from "lucide-react";
-import { useState } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -22,6 +21,16 @@ const testimonials = [
   {
     text: "The certification program exceeded my expectations. The support team is amazing and the course content is top-notch.",
     author: "John D., Delhi",
+    image: "/lovable-uploads/433cc108-c2a7-4a3d-849d-e07178694824.png"
+  },
+  {
+    text: "I've gained invaluable insights and practical skills through their comprehensive training programs. Highly recommended!",
+    author: "Dr. Priya R., Bangalore",
+    image: "/lovable-uploads/433cc108-c2a7-4a3d-849d-e07178694824.png"
+  },
+  {
+    text: "The online learning platform is user-friendly and the course material is well-structured. A great investment in my career.",
+    author: "Michael S., Chennai",
     image: "/lovable-uploads/433cc108-c2a7-4a3d-849d-e07178694824.png"
   }
 ];
@@ -67,7 +76,13 @@ export const Testimonials = () => {
           </p>
         </div>
 
-        <Carousel className="w-full max-w-2xl mx-auto mb-20">
+        <Carousel 
+          className="w-full max-w-2xl mx-auto mb-20"
+          opts={{
+            align: "start",
+            loop: true
+          }}
+        >
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index}>
@@ -87,8 +102,17 @@ export const Testimonials = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden md:flex" />
-          <CarouselNext className="hidden md:flex" />
+          <div className="flex items-center justify-center gap-4 mt-4 md:hidden">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                className="w-2 h-2 rounded-full bg-white/50 focus:bg-white transition-colors"
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+          <CarouselPrevious className="hidden md:flex absolute -left-12 text-white hover:text-white hover:bg-white/20" />
+          <CarouselNext className="hidden md:flex absolute -right-12 text-white hover:text-white hover:bg-white/20" />
         </Carousel>
 
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-8 items-center">

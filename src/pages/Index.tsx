@@ -7,6 +7,8 @@ import { Testimonials } from "@/components/Testimonials";
 import { UpcomingWebinars } from "@/components/UpcomingWebinars";
 import { FAQ } from "@/components/FAQ";
 import { CTA } from "@/components/CTA";
+import { BackToTop } from "@/components/BackToTop";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -15,13 +17,17 @@ const Index = () => {
       <Hero />
       <Features />
       <MentalHealthcare />
-      <Courses />
+      <div id="explore-path">
+        <Courses />
+      </div>
       <UpcomingWebinars />
       <Certifications />
       <Testimonials />
       <FAQ />
       <CTA />
       <Footer />
+      <BackToTop />
+      <WhatsAppButton />
     </div>
   );
 };

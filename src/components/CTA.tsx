@@ -29,7 +29,7 @@ export const CTA = () => {
             <Button 
               size="lg" 
               className="bg-white text-primary hover:bg-primary-50 group"
-              onClick={() => window.location.href = "/get-started"}
+              onClick={() => window.location.href = "https://www.endorphin.in/"}
             >
               Get Started Now
               <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
