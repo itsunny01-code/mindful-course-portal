@@ -25,7 +25,7 @@ const upcomingEvents = [
 export const UpcomingWebinars = () => {
   return (
     <section className="py-16 px-4 bg-primary-light/5">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-[1200px]">
         <h2 className="text-4xl font-bold text-center mb-12 text-primary">
           Upcoming Webinars & Training
         </h2>
@@ -33,7 +33,7 @@ export const UpcomingWebinars = () => {
           {upcomingEvents.map((event, index) => (
             <Card 
               key={index} 
-              className="backdrop-blur-sm bg-white/30 border-none shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-up min-w-[300px] snap-center" 
+              className="backdrop-blur-sm bg-white/50 border-none shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-up min-w-[300px] snap-center" 
               style={{ "--animation-delay": `${index * 200}ms` } as React.CSSProperties}
             >
               <CardContent className="p-6">

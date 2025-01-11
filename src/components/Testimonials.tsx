@@ -1,4 +1,30 @@
 import { Star } from "lucide-react";
+import { useState } from "react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "./ui/carousel";
+
+const testimonials = [
+  {
+    text: "Endorphin.in has truly transformed my understanding of counseling. The courses are incredibly informative, easy to follow, and have practical applications.",
+    author: "Anonymous, Pune",
+    image: "/lovable-uploads/433cc108-c2a7-4a3d-849d-e07178694824.png"
+  },
+  {
+    text: "The expert guidance and comprehensive approach to mental health training have been invaluable for my professional development.",
+    author: "Dr. Sarah M., Mumbai",
+    image: "/lovable-uploads/433cc108-c2a7-4a3d-849d-e07178694824.png"
+  },
+  {
+    text: "The certification program exceeded my expectations. The support team is amazing and the course content is top-notch.",
+    author: "John D., Delhi",
+    image: "/lovable-uploads/433cc108-c2a7-4a3d-849d-e07178694824.png"
+  }
+];
 
 const stats = [
   {
@@ -41,33 +67,29 @@ export const Testimonials = () => {
           </p>
         </div>
 
-        <div className="relative mb-20">
-          <button className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/10 p-3 rounded-full hidden md:block">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          
-          <div className="max-w-2xl mx-auto bg-primary-dark rounded-2xl md:rounded-full p-8 md:p-16 relative">
-            <div className="absolute top-4 right-4 md:top-8 md:right-8">
-              <img
-                src="/lovable-uploads/433cc108-c2a7-4a3d-849d-e07178694824.png"
-                alt="Testimonial"
-                className="w-12 h-12 md:w-16 md:h-16 rounded-full border-4 border-white/10"
-              />
-            </div>
-            <p className="text-base md:text-xl leading-relaxed mb-4">
-              "Endorphin.in has truly transformed my understanding of counseling. The courses are incredibly informative, easy to follow, and have practical applications. The team is supportive and always ready to help with any questions. Whether you're a beginner or looking to deepen your knowledge, these courses offer something for everyone. Highly recommend it to anyone serious about pursuing a career in counseling!"
-            </p>
-            <p className="text-white/70">- Anonymous, Pune</p>
-          </div>
-
-          <button className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/10 p-3 rounded-full hidden md:block">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
+        <Carousel className="w-full max-w-2xl mx-auto mb-20">
+          <CarouselContent>
+            {testimonials.map((testimonial, index) => (
+              <CarouselItem key={index}>
+                <div className="bg-primary-dark rounded-2xl md:rounded-full p-8 md:p-16 relative">
+                  <div className="absolute top-4 right-4 md:top-8 md:right-8">
+                    <img
+                      src={testimonial.image}
+                      alt="Testimonial"
+                      className="w-12 h-12 md:w-16 md:h-16 rounded-full border-4 border-white/10"
+                    />
+                  </div>
+                  <p className="text-base md:text-xl leading-relaxed mb-4">
+                    "{testimonial.text}"
+                  </p>
+                  <p className="text-white/70">- {testimonial.author}</p>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex" />
+          <CarouselNext className="hidden md:flex" />
+        </Carousel>
 
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-8 items-center">
           {stats.map((stat, index) => (

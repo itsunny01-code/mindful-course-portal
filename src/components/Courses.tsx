@@ -24,7 +24,7 @@ const courses = [
 export const Courses = () => {
   return (
     <section className="py-24 bg-gradient-to-b from-secondary-light/5 to-white">
-      <div className="container px-4 mx-auto">
+      <div className="container px-4 mx-auto max-w-[1200px]">
         <div className="max-w-2xl mx-auto mb-16 text-center">
           <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-primary uppercase bg-primary-light/10 rounded-full">
             Our Courses
