@@ -8,7 +8,7 @@ export const WhatsAppButton = () => {
   return (
     <Button
       onClick={handleWhatsAppClick}
-      className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#128C7E] rounded-full shadow-lg transition-all duration-300"
+      className="fixed bottom-6 right-6 z-50 w-12 h-12 bg-[#25D366] hover:bg-[#128C7E] rounded-full p-3 shadow-lg transition-all duration-300"
     >
       <svg
         className="w-6 h-6 text-white"

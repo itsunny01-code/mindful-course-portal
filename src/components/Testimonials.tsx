@@ -102,7 +102,7 @@ export const Testimonials = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="flex items-center justify-center gap-4 mt-4 md:hidden">
+          <div className="flex items-center justify-center gap-2 mt-4 md:hidden">
             {testimonials.map((_, index) => (
               <button
                 key={index}
@@ -111,8 +111,8 @@ export const Testimonials = () => {
               />
             ))}
           </div>
-          <CarouselPrevious className="hidden md:flex absolute -left-12 text-white hover:text-white hover:bg-white/20" />
-          <CarouselNext className="hidden md:flex absolute -right-12 text-white hover:text-white hover:bg-white/20" />
+          <CarouselPrevious className="hidden md:flex absolute -left-12 bg-white/10 text-white hover:text-white hover:bg-white/20" />
+          <CarouselNext className="hidden md:flex absolute -right-12 bg-white/10 text-white hover:text-white hover:bg-white/20" />
         </Carousel>
 
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-8 items-center">
