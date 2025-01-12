@@ -4,7 +4,6 @@ import { ArrowRight, Sparkles } from "lucide-react";
 export const Hero = () => {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-accent/10 via-white to-white">
-      {/* Background Elements */}
       <div className="absolute inset-0 z-0">
         <picture>
           <source
