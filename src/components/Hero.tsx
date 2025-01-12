@@ -22,7 +22,7 @@ export const Hero = () => {
             alt="Peaceful counseling environment"
             className="w-full h-full object-cover opacity-10"
             loading="eager"
-            fetchpriority="high"
+            fetchPriority="high"
             width="1200"
             height="800"
           />
