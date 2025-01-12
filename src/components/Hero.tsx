@@ -6,11 +6,27 @@ export const Hero = () => {
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-accent/10 via-white to-white">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1483058712412-4245e9b90334"
-          alt="Peaceful counseling environment"
-          className="w-full h-full object-cover opacity-10"
-        />
+        <picture>
+          <source
+            srcSet="https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=1200&fm=webp&q=80"
+            type="image/webp"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcSet="https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=800&fm=webp&q=80"
+            type="image/webp"
+            media="(min-width: 800px)"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=400&q=80"
+            alt="Peaceful counseling environment"
+            className="w-full h-full object-cover opacity-10"
+            loading="eager"
+            fetchpriority="high"
+            width="1200"
+            height="800"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent" />
       </div>
 

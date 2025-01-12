@@ -20,22 +20,23 @@ export const CourseCard = ({
         <div className="relative overflow-hidden">
           <picture>
             <source
-              srcSet={`${image}?w=800&fm=webp`}
+              srcSet={`${image}?w=800&fm=webp&q=80`}
               type="image/webp"
               media="(min-width: 800px)"
             />
             <source
-              srcSet={`${image}?w=400&fm=webp`}
+              srcSet={`${image}?w=400&fm=webp&q=80`}
               type="image/webp"
               media="(min-width: 400px)"
             />
             <img
-              src={`${image}?w=400`}
+              src={`${image}?w=400&q=80`}
               alt={title}
               className="object-cover w-full h-48 transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
               width="400"
               height="192"
+              decoding="async"
             />
           </picture>
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />

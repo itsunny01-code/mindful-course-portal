@@ -19,11 +19,22 @@ export const MentalHealthcare = () => {
         {/* First Section */}
         <div className="flex flex-col md:flex-row items-center gap-12 mb-24">
           <div className="w-full md:w-1/2">
-            <img
-              src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
-              alt="Mental Healthcare"
-              className="w-full h-[400px] object-cover rounded-2xl shadow-lg"
-            />
+            <picture>
+              <source
+                srcSet="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800&fm=webp&q=80"
+                type="image/webp"
+                media="(min-width: 800px)"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&q=80"
+                alt="Mental Healthcare"
+                className="w-full h-[400px] object-cover rounded-2xl shadow-lg"
+                loading="lazy"
+                width="800"
+                height="400"
+                decoding="async"
+              />
+            </picture>
           </div>
           <div className="w-full md:w-1/2">
             <h3 className="text-3xl font-bold text-primary mb-6">
@@ -42,11 +53,22 @@ export const MentalHealthcare = () => {
         {/* Second Section */}
         <div className="flex flex-col md:flex-row-reverse items-center gap-12">
           <div className="w-full md:w-1/2">
-            <img
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
-              alt="Self Care"
-              className="w-full h-[400px] object-cover rounded-2xl shadow-lg"
-            />
+            <picture>
+              <source
+                srcSet="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&fm=webp&q=80"
+                type="image/webp"
+                media="(min-width: 800px)"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&q=80"
+                alt="Self Care"
+                className="w-full h-[400px] object-cover rounded-2xl shadow-lg"
+                loading="lazy"
+                width="800"
+                height="400"
+                decoding="async"
+              />
+            </picture>
           </div>
           <div className="w-full md:w-1/2">
             <h3 className="text-3xl font-bold text-primary mb-6">
