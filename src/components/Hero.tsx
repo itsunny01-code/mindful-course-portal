@@ -45,7 +45,7 @@ export const Hero = () => {
           Begin Your Journey to
           <span className="relative block mt-2">
             <span className="bg-gradient-to-r from-secondary to-secondary-light bg-clip-text text-transparent">
-              Emotional Wellness
+              Emotional Wellnesss
             </span>
           </span>
         </h1>
