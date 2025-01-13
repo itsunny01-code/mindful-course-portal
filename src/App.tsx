@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Lazy load components
 const Index = lazy(() => import("./pages/Index"));
+const LandingOne = lazy(() => import("./pages/LandingOne"));
+const LandingTwo = lazy(() => import("./pages/LandingTwo"));
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -30,6 +32,8 @@ const App = () => (
         }>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/landing-one" element={<LandingOne />} />
+            <Route path="/landing-two" element={<LandingTwo />} />
           </Routes>
         </Suspense>
       </BrowserRouter>
