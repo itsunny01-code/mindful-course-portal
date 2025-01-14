@@ -14,7 +14,7 @@ import Footer from "@/components/Footer";
 
 const LandingOne = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white landing-one">
       <Header />
       <main className="pt-24">
         <Hero />
