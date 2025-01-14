@@ -31,19 +31,19 @@ export default {
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "#273c67",
-          light: "#3a5590",
-          dark: "#1b2a4a",
+          DEFAULT: "#ff7a57",
+          light: "#ff9980",
+          dark: "#ff5c33",
           foreground: "hsl(var(--secondary-foreground))",
         },
         accent: {
-          DEFAULT: "#273c67",
-          light: "#3a5590",
-          dark: "#1b2a4a",
+          DEFAULT: "#f3d046",
+          light: "#f5da71",
+          dark: "#f1c71f",
           foreground: "hsl(var(--accent-foreground))",
         },
         destructive: {
-          DEFAULT: "#273c67",
+          DEFAULT: "#ff7a57",
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
